@@ -12,14 +12,14 @@ def main():
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            add_item = input("what is the item you want to add? ")
+            add_item = input("Enter the item to add: ")
             shopping_list.append(add_item)
             # Prompt for and add an item
         elif choice == '2':
             if not shopping_list:
                 print("There is no item on the list.")
             else:
-                remove_item = input("What item would you like to remove? ")
+                remove_item = input("Enter the item to remove: ")
                 if remove_item in shopping_list:
                     shopping_list.remove(remove_item)
         elif choice == '3':
